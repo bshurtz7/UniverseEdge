@@ -1,0 +1,94 @@
+.slicknav_menu{
+	display: none;
+}
+
+@media all and (max-width:769px){
+	.slicknav_menu{
+		display: block;
+		width: 40%;
+		float: right;
+	}
+	.navbar{
+		display: none;
+	}
+	.mobileimage{
+		width:30%
+	}
+}
+body {
+  background-image: url('spacebackground.jpg');
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:white;
+}
+
+h1 {
+	font-size=60px;
+}
+
+h2 {
+	font-size=40px;
+}
+
+p {
+	color:yellow;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+table
+{
+    width: 100%;
+}
+
+.navbar{
+	width: 75%;
+	float: right;
+	list-style: none;
+}
+
+.navbar li{
+	background: grey;
+	width: 200px;
+	border: 1px solid black;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	line-height: 50px;
+	
+}
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.btn {
+  border: none;
+  background-color: black;
+  padding: 14px 28px;
+  font-size: 32px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: darkgray;}

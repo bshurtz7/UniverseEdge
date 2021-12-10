@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<!-- 
+*****************************************************************************
+Title: Universe's Edge Website
+Use: Final Project Website
+Author: Blake Shurtz
+School/Term: Southern Illinois University, Fall 2021
+Developed: 12/2/2021
+Tested: Passed on OperaGX, Firefox, and Edge
+******************************************************************************
+-->
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="slicknav.css">
+	<link rel="shortcut icon" type="image/png" href="spacefavicon.png"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>   
+        <title>Universe's Edge</title>
+
+</head>
+
+<body>
+		<!-- Slicknav implemented so that it will only display on mobile pages. Otherwise it is hidden --->
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="News.html">News</a></li>
+			<li><a href="Signup.html">Sign Up</a></li>
+			<li><a href="Store.html">Store</a></li>
+			<li><a href="Contact.html">Contact Us</a></li>
+		</ul>
+	 </nav>
+	
+	<!-- News page is formated using a table --->
+	<!-- Table should flex when viewed from mobile --->
+	<center><table border = "1">
+		<caption>Game News</caption>
+		<tr><th colspan="4"><h2><a href="fakelink.html">NEW GALAXY ANNOUNCED</a><h2></th></tr>
+		<tr>
+			<td> <img src="galaxy.jpg" class="mobileimage" style="width:640px;height:320px;border:0;"></td>
+			<td> Introducing the new galaxy of Auroxis! This new galaxy brings new factions, new ships, new planets to explore and more mysteries to uncover. Find out more in this
+			<a href="fakelink.html">latest blog post.</a>
+			</td>
+		</tr>
+		<br>
+		<tr><th colspan="3"><h2> <a href="fakelink.html">PATCH 1.5 RELEASED</a> <h2></th></tr>
+		<tr>
+			<td> <img src="spacefight3.jpg" class="mobileimage" style="width:640px;height:320px;border:0;"></td>
+			<td rowspan="3"> In our latest patch we lay the ground work for a big new release just around the corner. We also have some balancing changes targeting some of the ships and weapons that have been a little over tuned the past few weeks. Find out more in these
+			<a href="fakelink.html">new patch notes for patch 1.5.</a>
+			</td>
+		</tr>
+
+	<table></center>
+</body>

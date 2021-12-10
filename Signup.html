@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<!-- 
+*****************************************************************************
+Title: Universe's Edge Website
+Use: Final Project Website
+Author: Blake Shurtz
+School/Term: Southern Illinois University, Fall 2021
+Developed: 12/2/2021
+Tested: Passed on OperaGX, Firefox, and Edge
+******************************************************************************
+-->
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="slicknav.css">
+	<link rel="shortcut icon" type="image/png" href="spacefavicon.png"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>   
+        <title>Universe's Edge</title>
+
+</head>
+<body>
+	<!-- Slicknav implemented so that it will only display on mobile pages. Otherwise it is hidden --->
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="News.html">News</a></li>
+			<li><a href="Signup.html">Sign Up</a></li>
+			<li><a href="Store.html">Store</a></li>
+			<li><a href="Contact.html">Contact Us</a></li>
+		</ul>
+	 </nav>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<!-- Sign up page with a button for submitting and a Download button. -->
+	<center><h1> Sign up for the game here! </h1>
+	<h3> To play Universe's Edge you must be 13 years or older and have an internet connection. </h3>
+	<form>
+		<label for="name">Full Name:</label>
+		<br>
+		<input type="text" id="fname" name="fname" required pattern="[A-Za-z]" title="Name"><br>
+		<label for="email">Email:</label>
+		<br>
+		<input type="email" id="email" name="email" required><br>
+		<label for="birthday">Birthday:</label>
+		<br>
+		<input type="date" id="birthday" name="birthday" required><br>
+		<label for="name">New Username:</label>
+		<br>
+		<input type="text" id="username" name="username" required pattern="{4,30}" title="Name"><br>
+		<label for="pwd">New Password:</label>
+		<br>
+		<input type="password" id="pwd" name="pwd">
+		<br>
+		<br>
+		<input type="checkbox" id="newsupdate" name="newsupdate" value="Services">
+		<label for="newsupdate"> I would like to Recieve Emailed News Updates </label><br>
+		<br>
+		<form method="POST" action="fakelink.html">
+		<input type="submit" value="Submit">
+	</form>
+	<center><h2> Signed Up Already? Download the game here: </h2></center>
+	<!-- Download button that links to nothing, no actual download --->
+	<center><button class="btn"><a href="fakelink.html">Download Now</button></center>
+</body>
+	

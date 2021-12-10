@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<!-- 
+*****************************************************************************
+Title: Universe's Edge Website
+Use: Final Project Website
+Author: Blake Shurtz
+School/Term: Southern Illinois University, Fall 2021
+Developed: 12/2/2021
+Tested: Passed on OperaGX, Firefox, and Edge
+******************************************************************************
+-->
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="slicknav.css">
+	<link rel="shortcut icon" type="image/png" href="spacefavicon.png"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>   
+        <title>Universe's Edge</title>
+
+</head>
+
+<body>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="News.html">News</a></li>
+			<li><a href="Signup.html">Sign Up</a></li>
+			<li><a href="Store.html">Store</a></li>
+			<li><a href="Contact.html">Contact Us</a></li>
+		</ul>
+	 </nav>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+
+	
+	<center>
+	
+	<h1> Have a problem? Have a question? Contact us below: </h1>
+	
+	<form>
+		<p> What are you contacting us about?: </p>
+		<input type="checkbox" id="inquirytype1" name="inquirytype1" value="Services">
+		<label for="inquirytype1"> Techincal Issue with Game/Website </label>
+		<br>
+		<input type="checkbox" id="inquirytype2" name="inquirytype2" value="Rentals">
+		<label for="inquirytype2"> Question about game/store or other services</label>
+		<br>
+		<input type="checkbox" id="inquirytype3" name="inquirytype3" value="Sales">
+		<label for="inquirytype3"> Comment or Concern about Game</label>
+		<br>
+		
+		<label for="name">Account name:</label><br>
+		<input type="text" id="fname" name="fname" title="Name"><br>
+		
+		<label for="contactform">Submit your issue, comment, question, or concern here:</label><br>
+		<textarea id="form" name="form" rows="4" cols="40"></textarea>
+		<br>
+		
+		<input type="submit" value="Submit">
+		
+	</form>
+	
+</body>
